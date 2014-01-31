@@ -1,7 +1,7 @@
 {
     "name"          : "solfegejs-site",
     "description"   : "The SolfegeJS website",
-    "version"       : "0.0.1",
+    "version"       : "0.0.2",
     "author"        : "neolao <contact@neolao.com>",
     "repository"    : "https://github.com/neolao/solfege-site.git",
     "engines"       : 
@@ -10,9 +10,9 @@
     },
     "dependencies"  : 
     {
-        "solfegejs"         : "0.0.3",
-        "solfegejs-cli"     : "0.0.3",
-        "solfegejs-server"  : "0.0.2"
+        "solfegejs"         : "1.0.x",
+        "solfegejs-cli"     : "1.0.x",
+        "solfegejs-server"  : "0.1.x"
     },
     "devDependencies":
     {
