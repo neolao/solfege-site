@@ -17,6 +17,7 @@ var proto = Home.prototype;
  */
 proto.index = function*(request, response)
 {
+    response.statusCode = 200;
     response.parameters.foo = 'bar';
 
     yield response.render('index.swig');
