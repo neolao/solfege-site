@@ -1,17 +1,23 @@
 var solfege = require('solfegejs');
-var solfegeServer = require('solfegejs-server');
-var solfegeServerStatic = require('solfegejs-server-static');
-var solfegeServerRouter = require('solfegejs-server-router');
-var solfegeCli = require('solfegejs-cli');
 
 // Initialize the application
 var application = new solfege.kernel.Application(__dirname);
 
-// Add the bundles
+// Add the external bundles
+var solfegeServer = require('solfegejs-server');
+var solfegeServerStatic = require('solfegejs-server-static');
+var solfegeServerRouter = require('solfegejs-server-router');
+var solfegeSwig = require('solfegejs-swig');
+var solfegeCli = require('solfegejs-cli');
+application.addBundle('swig', new solfegeSwig.Engine);
 application.addBundle('server', new solfegeServer.HttpServer);
 application.addBundle('static', new solfegeServerStatic.Static);
 application.addBundle('router', new solfegeServerRouter.Router);
 application.addBundle('console', new solfegeCli.Console);
+
+// Add the internal bundles
+var Website = require('./bundles/website/Website');
+application.addBundle('website', new Website);
 
 // Override the configuration
 var configuration = require(__dirname + '/config/default.js');

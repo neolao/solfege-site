@@ -9,6 +9,9 @@ module.exports = {
             // Serve static files
             '@static.middleware',
 
+            // The template engine
+            '@swig.middleware',
+
             // The router to handle URIs
             '@router.middleware'
         ]
@@ -24,5 +27,20 @@ module.exports = {
 
     // Configuration of the router bundle
     router: {
+        // The routes
+        routes: [
+            {
+                id: 'home',
+                url: '/',
+                controller: '@website.controllers.Home',
+                action: 'index'
+            }
+        ]
+    },
+
+    // Configuration of the swig engine
+    swig: {
+        // Templates path
+        path: __dirname + '/../views'
     }
 };
