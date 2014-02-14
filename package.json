@@ -16,7 +16,8 @@
         "solfegejs-server-compression"  : "*",
         "solfegejs-server-static"  : "*",
         "solfegejs-server-router": "*",
-        "solfegejs-swig"    : "*"
+        "solfegejs-swig"    : "*",
+        "solfegejs-markdown": "*"
     },
     "devDependencies":
     {
