@@ -6,6 +6,10 @@ module.exports = {
 
         // The middlewares
         middlewares: [
+            // Deflate or Gzip compression
+            '@deflate.middleware',
+            '@gzip.middleware',
+
             // Serve static files
             '@static.middleware',
 
@@ -42,5 +46,12 @@ module.exports = {
     swig: {
         // Templates path
         path: __dirname + '/../views'
+    },
+
+    // Configuration of the markdown engine
+    markdown: {
+        // Templates path
+        path: __dirname + '/../views'
     }
+
 };

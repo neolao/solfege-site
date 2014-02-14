@@ -13,6 +13,7 @@
         "solfegejs"         : "1.2.x",
         "solfegejs-cli"     : "1.0.x",
         "solfegejs-server"  : "1.2.x",
+        "solfegejs-server-compression"  : "*",
         "solfegejs-server-static"  : "*",
         "solfegejs-server-router": "*",
         "solfegejs-swig"    : "*"
