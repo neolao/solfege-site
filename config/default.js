@@ -13,6 +13,9 @@ module.exports = {
             // Serve static files
             '@static.middleware',
 
+            // Serve the assets
+            '@assets.middleware',
+
             // The template engine
             '@swig.middleware',
 
@@ -20,6 +23,9 @@ module.exports = {
             '@router.middleware'
         ]
     },
+
+    // Configuration of the assets bundle
+    assets: require('./assets'),
 
     // Configuration of the static bundle
     static: {
@@ -45,13 +51,14 @@ module.exports = {
     // Configuration of the swig engine
     swig: {
         // Templates path
-        path: __dirname + '/../views'
-    },
+        path: __dirname + '/../views',
 
-    // Configuration of the markdown engine
-    markdown: {
-        // Templates path
-        path: __dirname + '/../views'
+        // Available variables and methods in all templates
+        locals: {
+            asset: '@assets.getAssetUrl',
+            javascript: '@assets.getJavascriptUrls',
+            stylesheet: '@assets.getStylesheetUrls'
+        }
     }
 
 };

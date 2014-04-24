@@ -18,7 +18,7 @@ var proto = Home.prototype;
 proto.index = function*(request, response)
 {
     response.statusCode = 200;
-    response.parameters.foo = 'bar';
+    response.parameters.title = 'SolfegeJS | The modular framework for NodeJS';
 
     yield response.render('index.swig');
 };
