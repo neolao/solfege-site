@@ -1,5 +1,64 @@
 @import "general/reset.scss";
+@import "general/figure.scss";
+
+$body-width: 800px;
+
 
 body {
     background: #fff;
+
+    font-weight: 300;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", Helvetica, Arial, Verdana, sans-serif;
+    color: #444;
+}
+
+// Links
+a {
+    color: #444;
+    text-decoration: underline;
+
+    &:hover {
+        color: #000;
+    }
+}
+
+
+// The main header
+header {
+    max-width: $body-width;
+    margin: 100px auto;
+
+    text-align: center;
+
+    h1 {
+        font-size: 3rem;
+        color: #000;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+}
+
+
+// A section
+section {
+    max-width: $body-width;
+    margin: 0 auto 100px auto;
+
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: .5rem;
+    }
+
+    figure {
+        text-align: center;
+    }
+
+    p {
+        line-height: 1.3em;
+        margin: 1em 0;
+    }
 }
