@@ -4,7 +4,7 @@
 <article>
     <header>
         <h1>
-            <svg width="400" height="100">
+            <svg width="400" height="100" viewBox="0 0 400 100">
                 <text x="90" y="55">Sol</text>
                 <text x="200" y="55">egeJS</text>
                 <symbol id="logo">
@@ -37,7 +37,7 @@
         <h1>Application</h1>
 
         <figure>
-            <svg width="400" height="150">
+            <svg width="400" height="150" viewBox="0 0 400 150">
                 <!-- Lines -->
                 <line class="figure-line" x1="200" y1="51" x2="200" y2="100"/>
                 <line class="figure-line" x1="50" y1="75" x2="350" y2="75"/>
