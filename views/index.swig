@@ -20,7 +20,7 @@
     </header>
 
 
-    <section>
+    <section id="introduction">
         <h1>Introduction</h1>
         <p>
             SolfegeJS provides a modular mecanism to build <a href="#application">applications</a>.
