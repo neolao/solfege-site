@@ -5,14 +5,14 @@
     <header>
         <h1>
             <svg width="400" height="100" viewBox="0 0 400 100">
-                <text x="90" y="55">Sol</text>
-                <text x="200" y="55">egeJS</text>
+                <text x="90" y="55">Solfege</text>
+                <text x="300" y="55">S</text>
                 <symbol id="logo">
                     <line x1="30" y1="0" x2="30" y2="70" stroke="black" stroke-width="2" />
                     <circle cx="16" cy="70" r="15" />
                     <path d="M 30,0 q 5,25 20,25 Q 31,30 31,20" stroke="black" stroke-width="2"/>
                 </symbol>
-                <use xlink:href="#logo" x="152" y="0"/>
+                <use xlink:href="#logo" x="250" y="0"/>
                 SolfegeJS
             </svg>
         </h1>
