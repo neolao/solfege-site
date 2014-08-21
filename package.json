@@ -6,7 +6,7 @@
     "repository"    : "https://github.com/neolao/solfege-site.git",
     "engines"       : 
     {
-        "node": ">= 0.11.9"
+        "node": ">= 0.11.11"
     },
     "dependencies"  : 
     {
