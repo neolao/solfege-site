@@ -74,6 +74,41 @@
 
     <section id="bundle">
         <h1>Bundle</h1>
+
+        <figure>
+            <svg width="400" height="170" viewBox="0 0 400 170">
+                <!-- Lines -->
+                <line class="figure-line" x1="50" y1="25" x2="50" y2="145"/>
+                <line class="figure-line" x1="350" y1="25" x2="350" y2="85"/>
+                <line class="figure-line" x1="50" y1="85" x2="350" y2="85"/>
+                <line class="figure-line" x1="50" y1="145" x2="200" y2="145"/>
+
+                <!-- Bundle A -->
+                <rect class="figure-bundle" width="100" height="50" x="0" y="0"/>
+                <text text-anchor="middle" x="50" y="30">Bundle A</text>
+
+                <!-- Bundle B -->
+                <rect class="figure-bundle" width="100" height="50" x="300" y="0"/>
+                <text text-anchor="middle" x="350" y="30">Bundle B</text>
+
+                <!-- Bundle C -->
+                <rect class="figure-bundle" width="100" height="50" x="150" y="60"/>
+                <text text-anchor="middle" x="200" y="90">Bundle C</text>
+
+                <!-- Bundle D -->
+                <rect class="figure-bundle" width="100" height="50" x="150" y="120"/>
+                <text text-anchor="middle" x="200" y="150">Bundle D</text>
+            </svg>
+        </figure>
+
+
+
+        <p>
+            A bundle is a structured set of files that implements a single feature.
+        </p>
+        <p>
+            It can be independent or it may need other bundles.
+        </p>
     </section>
 
 
