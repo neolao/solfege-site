@@ -1,6 +1,6 @@
 
 .figure-application {
-    fill: #fc6;
+    fill: #f66;
     stroke-width: 1;
     stroke: #4C3D1F;
 }
@@ -11,7 +11,29 @@
     stroke: #1A3380;
 }
 
+.figure-script {
+    fill: #6f6;
+    stroke-width: 1;
+    stroke: #661A66;
+}
+
 .figure-line {
     stroke-width: 1;
     stroke: #666;
+}
+.figure-line-dash {
+    stroke-width: 1;
+    stroke: #ccc;
+    stroke-dasharray: 10, 10;
+}
+.figure-line-action {
+    fill: #333;
+    stroke-width: 1;
+    stroke: #333;
+}
+
+.figure-block-action {
+    fill: #ff0;
+    stroke-width: 1;
+    stroke: #333;
 }

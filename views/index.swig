@@ -114,6 +114,60 @@
 
     <section id="workflow">
         <h1>Workflow</h1>
+
+        <figure>
+            <svg width="400" height="400" viewBox="0 0 400 400">
+                <!-- Lines -->
+                <line class="figure-line-dash" x1="50" y1="25" x2="50" y2="400"/>
+                <line class="figure-line-dash" x1="170" y1="25" x2="170" y2="400"/>
+                <line class="figure-line-dash" x1="290" y1="25" x2="290" y2="400"/>
+
+                <!-- main.js -->
+                <rect class="figure-script" width="100" height="50" x="0" y="0"/>
+                <text text-anchor="middle" x="50" y="30">main.js</text>
+
+                <!-- Application -->
+                <rect class="figure-application" width="100" height="50" x="120" y="0"/>
+                <text text-anchor="middle" x="170" y="30">Application</text>
+
+                <!-- MyBundle -->
+                <rect class="figure-bundle" width="100" height="50" x="240" y="0"/>
+                <text text-anchor="middle" x="290" y="30">MyBundle</text>
+
+                <!-- Action: addBundle -->
+                <text text-anchor="middle" x="110" y="90">addBundle()</text>
+                <text text-anchor="middle" x="230" y="120">register</text>
+                <line class="figure-line-action" x1="50" y1="100" x2="170" y2="100"/>
+                <polygon class="figure-line-action" points="160,97 170,100 160,103"/>
+                <line class="figure-line-action" x1="170" y1="130" x2="290" y2="130"/>
+                <polygon class="figure-line-action" points="280,127 290,130 280,133"/>
+                <line class="figure-line-action" x1="50" y1="160" x2="290" y2="160"/>
+                <polygon class="figure-line-action" points="60,157 50,160 60,163"/>
+                <rect class="figure-block-action" width="10" height="60" x="170" y="100"/>
+                <rect class="figure-block-action" width="10" height="30" x="290" y="130"/>
+
+                <!-- Action: start -->
+                <text text-anchor="middle" x="110" y="210">start()</text>
+                <text text-anchor="middle" x="230" y="240">event start</text>
+                <line class="figure-line-action" x1="50" y1="220" x2="170" y2="220"/>
+                <polygon class="figure-line-action" points="160,217 170,220 160,223"/>
+                <line class="figure-line-action" x1="170" y1="250" x2="290" y2="250"/>
+                <polygon class="figure-line-action" points="280,247 290,250 280,253"/>
+                <line class="figure-line-action" x1="170" y1="280" x2="290" y2="280"/>
+                <polygon class="figure-line-action" points="190,277 180,280 190,283"/>
+                <line class="figure-line-action" x1="50" y1="310" x2="170" y2="310"/>
+                <polygon class="figure-line-action" points="60,307 50,310 60,313"/>
+                <rect class="figure-block-action" width="10" height="90" x="170" y="220"/>
+                <rect class="figure-block-action" width="10" height="30" x="290" y="250"/>
+            </svg>
+        </figure>
+
+
+        <p>
+            After creating instances, the application adds the bundles into his registry. 
+            Then, it initializes the bundles and dispatches a "start" event.
+            Each bundle can listen the event and act accordingly.
+        </p>
     </section>
 
 
