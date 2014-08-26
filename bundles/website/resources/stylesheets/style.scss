@@ -115,6 +115,21 @@ section {
     #examples {
         @include step("5");
     }
+        .example {
+            &:after {
+                display: block;
+                content: "";
+                clear: both;
+            }
+        }
+        .example-illustration {
+            float: left;
+            margin-right: 10px;
+        }
+        .example-title {
+            font-size: 1.2rem;
+            text-transform: none;
+        }
 
 // Responsive
 @media screen and (max-width: 800px) {

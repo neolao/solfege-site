@@ -173,6 +173,16 @@
 
     <section id="examples">
         <h1>Examples</h1>
+
+        <section class="example">
+            <figure class="example-illustration">
+                <img src="{{ asset('@website:resources/images/example-clock.png') }}" alt="" />
+            </figure>
+            <h1 class="example-title">A clock displayed on the terminal</h1>
+            <p>This is a simple bundle that display a clock. It listen the "start" event of the application and write the time on the screen.</p>
+            <p>Source: <a href="https://github.com/neolao/solfege-example-clock">https://github.com/neolao/solfege-example-clock</a></p>
+        </section>
+
     </section>
 
 </article>
