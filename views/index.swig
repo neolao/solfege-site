@@ -191,6 +191,20 @@
             <p>It is a set of commands available in the terminal. It uses the bundle <a href="https://github.com/neolao/solfege-bundle-cli">solfegejs-cli</a> that listen the "<code>bundles_initialized</code>" event to get available commands from the other bundles and expose them.</p>
             <p>Source: <a href="https://github.com/neolao/solfege-example-image-manipulation">https://github.com/neolao/solfege-example-image-manipulation</a></p>
         </section>
+
+        <section class="example">
+            <figure class="example-illustration">
+                <img src="{{ asset('@website:resources/images/example-website.png') }}" alt="" />
+            </figure>
+            <h1 class="example-title">Simple website</h1>
+            <p>
+                The <a href="https://github.com/neolao/solfege-bundle-server">solfegejs-server</a> provides a HTTP server with a middleware mecanism.
+                The <a href="https://github.com/neolao/solfege-bundle-router">router</a> and <a href="https://github.com/neolao/solfege-bundle-swig">template engine</a> are middlewares. Each bundle configuration can be overridden by the application.
+            </p>
+            <p>Source: <a href="https://github.com/neolao/solfege-example-website">https://github.com/neolao/solfege-example-website</a></p>
+        </section>
+
+
     </section>
 
 </article>
