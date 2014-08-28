@@ -79,6 +79,10 @@ section {
         line-height: 1.3em;
         margin: 1em 0;
     }
+
+    code {
+        font-family: monospace;
+    }
 }
     @mixin step($number: "1") {
         position: relative;
@@ -116,6 +120,7 @@ section {
         @include step("5");
     }
         .example {
+            margin-bottom: 2em;
             &:after {
                 display: block;
                 content: "";

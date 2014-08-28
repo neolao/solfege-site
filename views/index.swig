@@ -179,10 +179,18 @@
                 <img src="{{ asset('@website:resources/images/example-clock.png') }}" alt="" />
             </figure>
             <h1 class="example-title">A clock displayed on the terminal</h1>
-            <p>This is a simple bundle that display a clock. It listen the "start" event of the application and write the time on the screen.</p>
+            <p>This is a simple bundle that display a clock. It listen the "<code>start</code>" event of the application and write the time on the screen.</p>
             <p>Source: <a href="https://github.com/neolao/solfege-example-clock">https://github.com/neolao/solfege-example-clock</a></p>
         </section>
 
+        <section class="example">
+            <figure class="example-illustration">
+                <img src="{{ asset('@website:resources/images/example-image-manipulation.png') }}" alt="" />
+            </figure>
+            <h1 class="example-title">Command Line Interface to manipulate images</h1>
+            <p>It is a set of commands available in the terminal. It uses the bundle <a href="https://github.com/neolao/solfege-bundle-cli">solfegejs-cli</a> that listen the "<code>bundles_initialized</code>" event to get available commands from the other bundles and expose them.</p>
+            <p>Source: <a href="https://github.com/neolao/solfege-example-image-manipulation">https://github.com/neolao/solfege-example-image-manipulation</a></p>
+        </section>
     </section>
 
 </article>
