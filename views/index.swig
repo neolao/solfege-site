@@ -116,11 +116,12 @@
         <h1>Workflow</h1>
 
         <figure>
-            <svg width="400" height="400" viewBox="0 0 400 400">
+            <svg width="460" height="500" viewBox="0 0 460 500">
                 <!-- Lines -->
-                <line class="figure-line-dash" x1="50" y1="25" x2="50" y2="400"/>
-                <line class="figure-line-dash" x1="170" y1="25" x2="170" y2="400"/>
-                <line class="figure-line-dash" x1="290" y1="25" x2="290" y2="400"/>
+                <line class="figure-line-dash" x1="50" y1="25" x2="50" y2="500"/>
+                <line class="figure-line-dash" x1="170" y1="25" x2="170" y2="500"/>
+                <line class="figure-line-dash" x1="290" y1="25" x2="290" y2="500"/>
+                <line class="figure-line-dash" x1="410" y1="25" x2="410" y2="500"/>
 
                 <!-- main.js -->
                 <rect class="figure-script" width="100" height="50" x="0" y="0"/>
@@ -130,11 +131,15 @@
                 <rect class="figure-application" width="100" height="50" x="120" y="0"/>
                 <text text-anchor="middle" x="170" y="30">Application</text>
 
-                <!-- MyBundle -->
+                <!-- Bundle A -->
                 <rect class="figure-bundle" width="100" height="50" x="240" y="0"/>
-                <text text-anchor="middle" x="290" y="30">MyBundle</text>
+                <text text-anchor="middle" x="290" y="30">Bundle A</text>
 
-                <!-- Action: addBundle -->
+                <!-- Bundle C -->
+                <rect class="figure-bundle" width="100" height="50" x="360" y="0"/>
+                <text text-anchor="middle" x="410" y="30">Bundle C</text>
+
+                <!-- Action: addBundle 1 -->
                 <text text-anchor="middle" x="110" y="90">addBundle()</text>
                 <text text-anchor="middle" x="230" y="120">register</text>
                 <line class="figure-line-action" x1="50" y1="100" x2="170" y2="100"/>
@@ -146,19 +151,37 @@
                 <rect class="figure-block-action" width="10" height="60" x="170" y="100"/>
                 <rect class="figure-block-action" width="10" height="30" x="290" y="130"/>
 
-                <!-- Action: start -->
-                <text text-anchor="middle" x="110" y="210">start()</text>
-                <text text-anchor="middle" x="230" y="240">event start</text>
+                <!-- Action: addBundle 2 -->
+                <text text-anchor="middle" x="110" y="210">addBundle()</text>
+                <text text-anchor="middle" x="230" y="240">register</text>
                 <line class="figure-line-action" x1="50" y1="220" x2="170" y2="220"/>
                 <polygon class="figure-line-action" points="160,217 170,220 160,223"/>
-                <line class="figure-line-action" x1="170" y1="250" x2="290" y2="250"/>
-                <polygon class="figure-line-action" points="280,247 290,250 280,253"/>
-                <line class="figure-line-action" x1="170" y1="280" x2="290" y2="280"/>
-                <polygon class="figure-line-action" points="190,277 180,280 190,283"/>
-                <line class="figure-line-action" x1="50" y1="310" x2="170" y2="310"/>
-                <polygon class="figure-line-action" points="60,307 50,310 60,313"/>
-                <rect class="figure-block-action" width="10" height="90" x="170" y="220"/>
-                <rect class="figure-block-action" width="10" height="30" x="290" y="250"/>
+                <line class="figure-line-action" x1="170" y1="250" x2="410" y2="250"/>
+                <polygon class="figure-line-action" points="400,247 410,250 400,253"/>
+                <line class="figure-line-action" x1="50" y1="280" x2="410" y2="280"/>
+                <polygon class="figure-line-action" points="60,277 50,280 60,283"/>
+                <rect class="figure-block-action" width="10" height="60" x="170" y="220"/>
+                <rect class="figure-block-action" width="10" height="30" x="410" y="250"/>
+
+                <!-- Action: start -->
+                <text text-anchor="middle" x="110" y="330">start()</text>
+                <text text-anchor="middle" x="230" y="360">event start</text>
+                <text text-anchor="middle" x="360" y="390">doSomething()</text>
+                <line class="figure-line-action" x1="50" y1="340" x2="170" y2="340"/>
+                <polygon class="figure-line-action" points="160,337 170,340 160,343"/>
+                <line class="figure-line-action" x1="170" y1="370" x2="290" y2="370"/>
+                <polygon class="figure-line-action" points="280,367 290,370 280,373"/>
+                <line class="figure-line-action" x1="290" y1="400" x2="410" y2="400"/>
+                <polygon class="figure-line-action" points="400,397 410,400 400,403"/>
+                <line class="figure-line-action" x1="290" y1="430" x2="410" y2="430"/>
+                <polygon class="figure-line-action" points="310,427 300,430 310,433"/>
+                <line class="figure-line-action" x1="170" y1="460" x2="290" y2="460"/>
+                <polygon class="figure-line-action" points="190,457 180,460 190,463"/>
+                <line class="figure-line-action" x1="50" y1="490" x2="170" y2="490"/>
+                <polygon class="figure-line-action" points="60,487 50,490 60,493"/>
+                <rect class="figure-block-action" width="10" height="150" x="170" y="340"/>
+                <rect class="figure-block-action" width="10" height="90" x="290" y="370"/>
+                <rect class="figure-block-action" width="10" height="30" x="410" y="400"/>
             </svg>
         </figure>
 
@@ -173,6 +196,7 @@
 
     <section id="examples">
         <h1>Examples</h1>
+        <p>Here are some use cases. They are intentionally simple in order to highlight the concepts.</p>
 
         <section class="example">
             <figure class="example-illustration">
