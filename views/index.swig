@@ -168,7 +168,7 @@
 
                 <!-- Action: start -->
                 <text text-anchor="middle" x="110" y="330">start()</text>
-                <text text-anchor="middle" x="230" y="360">event start</text>
+                <text text-anchor="middle" x="230" y="360">"start" event</text>
                 <text text-anchor="middle" x="360" y="390">doSomething()</text>
                 <line class="figure-line-action" x1="50" y1="340" x2="170" y2="340"/>
                 <polygon class="figure-line-action" points="160,337 170,340 160,343"/>
