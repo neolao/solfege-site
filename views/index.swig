@@ -19,6 +19,9 @@
         <h2>The modular framework for NodeJS</h2>
     </header>
 
+    <p class="main-links">
+        <a class="button-source" href="https://github.com/neolao/solfege">Source (version 1.3.5)</a>
+    </p>
 
     <section id="introduction">
         <h1>Introduction</h1>

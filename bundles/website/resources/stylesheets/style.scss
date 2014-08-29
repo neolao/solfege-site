@@ -31,7 +31,7 @@ a {
 // The main header
 header {
     max-width: $body-width;
-    margin: 100px auto;
+    margin: 100px auto 50px auto;
     line-height: 1.5em;
 
     text-align: center;
@@ -57,6 +57,27 @@ header {
     }
 }
 
+.main-links {
+    position: relative;
+    text-align: center;
+    margin: 0 0 50px 0;
+}
+    .button-source {
+        display: inline-block;
+        background: #4183c4;
+        color: #fff;
+        padding: .5em 2em;
+        font-size: .9rem;
+        line-height: 1.5em;
+        text-decoration: none;
+        text-transform: uppercase;
+        @include border-radius(5px);
+
+        &:hover {
+            color: #fff;
+            background: #61a3e4;
+        }
+    }
 
 // A section
 section {
